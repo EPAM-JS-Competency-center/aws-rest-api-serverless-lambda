@@ -1,5 +1,5 @@
 Resources:
-  campaignRestApiUrlSSMParameter:
+  usersRestApiUrlSSMParameter:
     Type: AWS::SSM::Parameter
     Properties:
       Name: /users-rest/api-url
