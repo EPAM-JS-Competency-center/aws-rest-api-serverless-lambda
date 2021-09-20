@@ -102,3 +102,18 @@ dist
 
 # TernJS port file
 .tern-port
+.serverless
+.webpack
+.idea
+.vscode
+node_modules
+yarn-error.log
+.DS_Store
+.npmrc
+./build
+build
+/coverage
+/.vs
+artifacts
+.npmrc
+reports/

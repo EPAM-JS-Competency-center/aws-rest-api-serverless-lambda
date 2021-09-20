@@ -1,0 +1,45 @@
+createUser:
+  handler: src/handlers/createUser.handler
+  name: ${self:custom.namePrefix}-create-user-handler
+  events:
+    - http:
+        method: post
+        path: users
+        cors: true
+        private: true
+getUser:
+  handler: src/handlers/getUser.handler
+  name: ${self:custom.namePrefix}-get-user-handler
+  events:
+    - http:
+        method: get
+        path: users/{userId}
+        cors: true
+        private: true
+getUsers:
+  handler: src/handlers/getUsers.handler
+  name: ${self:custom.namePrefix}-get-users-handler
+  events:
+    - http:
+        method: get
+        path: users
+        cors: true
+        private: true
+updateUser:
+  handler: src/handlers/updateUser.handler
+  name: ${self:custom.namePrefix}-update-user-handler
+  events:
+    - http:
+        method: put
+        path: users/{userId}
+        cors: true
+        private: true
+deleteUser:
+  handler: src/handlers/deleteUser.handler
+  name: ${self:custom.namePrefix}-delete-user-handler
+  events:
+    - http:
+        method: delete
+        path: users/{userId}
+        cors: true
+        private: true
